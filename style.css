@@ -24,6 +24,16 @@ html,body{
     
 }
 
+.nav-item a {
+  color: #fff;
+}
+
+.nav-item a:hover {
+  background: #6C5B7B;
+  border-radius: 12px;
+  color: #fff;
+}
+
 .navbar-nav li{
 padding-right: 1em;
 }
@@ -52,10 +62,22 @@ h1,h2,h3{padding: 20px;
 
     form {
         margin:30px;
-
         padding: 30px;
         background-color:#eae7dc;
-        margin: 0 auto;
+        margin-left: 450px;
+    }
+
+    .login-btn{
+      margin-top: 12px;
+    }
+
+    .form-check-label a{
+      font-weight: 700;
+    }
+
+    .form-check-label a:hover{
+      font-weight: 650;
+      text-decoration: none;
     }
 
     .welcome .card {
