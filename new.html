@@ -8,7 +8,7 @@
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
-    <title> Patient Data | Signup Page</title>
+    <title> Patient Data | Homepage</title>
   </head>
   <body>
 
@@ -30,9 +30,12 @@
           <a class="nav-link" href="about.html">about</a>
         </li>
        
-       
+        <li class="nav-item text-uppercase">
+            <a class="nav-link" href="update.html">update Patient</a>
+          </li>
+         
             <li class="nav-item text-uppercase">
-                <a class="nav-link" href="login.html">login</a>
+                <a class="nav-link" href="login.html">logout</a>
               </li>
              
        </ul>
@@ -40,64 +43,64 @@
   </div>
   </nav>
 
-  
-  
-    <h2 class="text-center text-capitalize">Create your account</h2>
+
+
+
+
+  <h2 class="text-center text-capitalize">Patient Data</h2>
     <div  class="container padding col-md-8">
 
       <form class="col-md-10">
         
           <div class="form-row">
             <div class="col">
-              <label for="inputEmail4">Firstname</label>
-              <input type="text" class="form-control" placeholder="First name">
+              <label for="inputEmail4">Patient Names</label>
+              <input type="text" class="form-control" placeholder=" name">
             </div>
             <div class="col">
-              <label for="inputEmail4">Lastname</label>
-              <input type="text" class="form-control" placeholder="Last name">
+              <label for="inputEmail4">Doctor Names</label>
+              <input type="text" class="form-control" placeholder=" name">
             </div>
           </div>
 
         
             <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputEmail4">Email</label>
+              <div class="col">
+                <label for="inputEmail4">Age</label>
                 <input type="email" class="form-control" id="inputEmail4">
               </div>
-              <div class="form-group col-md-6">
-                <label for="inputPassword4">Password</label>
-                <input type="password" class="form-control" id="inputPassword4">
-              </div>
-            </div>
-           
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputCity">Hospital</label>
-                <input type="text" class="form-control" id="inputCity">
-              </div>
-              <div class="form-group col-md-4">
-                <label for="inputState">Job Name</label>
+              <div class="col">
+                <label for="inputState">Gender</label>
                 <select id="inputState" class="form-control">
                   <option selected>Choose...</option>
-                  <option>Doctor</option>
-                  <option>Radiologist</option>
+                  <option>Female</option>
+                  <option>Male</option>
                 </select>
               </div>
-              <div class="form-group col-md-2">
-                <label for="inputZip">RMDC Code</label>
-                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="form-row">
+              <div class="col">
+              <label for="inputState">Test</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>CT Scan </option>
+                  <option>MRI Scan </option>
+                  <option>Ultrasound</option>
+                  <option>X-Ray</option>
+                  </select> </div>
+              <div class="col">
+                  <label for="validationTextarea">Textarea</label>
+                  <textarea class="form-control is-invalid"
+                   id="validationTextarea" placeholder="Test Result" ></textarea>
               </div>
             </div>
-            <label class="form-check-label" for="invalidCheck2">
-              Do you have an account <a href="login.html">Login</a>
-            </label> <br>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-              <label class="form-check-label" for="invalidCheck2">
-                Agree to terms and conditions
-              </label>
-            </div>
-            <button type="submit" class="btn-signup">Signup</button>
+              <div class="form-group">
+                <label for="exampleFormControlFile1">Result Image</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              </div>
+            
+            
+            <button type="submit" class="btn-signup">Save</button>
             </form>
         
  
@@ -106,8 +109,10 @@
     
 </div>
 
- 
 
+
+  
+  
  
 
     <footer>
