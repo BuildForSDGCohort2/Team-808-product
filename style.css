@@ -6,7 +6,7 @@ html,body{
     width: 100%;
     height: 100%;
     font-family: 'Poppins',sans-serif;
-    background-color:#f4f4f4;
+    
     color:  #5d6d7e ;
 }
 
@@ -24,16 +24,6 @@ html,body{
     
 }
 
-.nav-item a {
-  color: #fff;
-}
-
-.nav-item a:hover {
-  background: #6C5B7B;
-  border-radius: 12px;
-  color: #fff;
-}
-
 .navbar-nav li{
 padding-right: 1em;
 }
@@ -46,7 +36,11 @@ font-size: 1.0 rem ! important;
 
 .navbar-brand span{
     display:inline-table;
+    
 }
+.navbar-toggler,.navbar-toggler{
+        
+    background-color:black;}
 
 .navbar-brand img{width: 80%;}
 
@@ -62,22 +56,10 @@ h1,h2,h3{padding: 20px;
 
     form {
         margin:30px;
+
         padding: 30px;
         background-color:#eae7dc;
-        margin-left: 450px;
-    }
-
-    .login-btn{
-      margin-top: 12px;
-    }
-
-    .form-check-label a{
-      font-weight: 700;
-    }
-
-    .form-check-label a:hover{
-      font-weight: 650;
-      text-decoration: none;
+        margin: 0 auto;
     }
 
     .welcome .card {
@@ -96,12 +78,26 @@ h1,h2,h3{padding: 20px;
     padding: 7px 25px 15px ;
     
 }
-.info{ background-color:#eae7dc;
+.welcome a:hover{
+    background-color: #A9A9A9 ;
+    text-decoration: none;
+    color:F7F7F7 ;
+}
+.about{background-color:#eae7dc;
+    padding: 30px;
+    
+    margin: 30px;}
+.info{ 
     padding: 30px;
     
 margin: 30px;}
 
-table{background-color:#eae7dc;}
+table{background-color:#eae7dc;
+}
+
+
+td,thead,th,tr,table {border: 3px solid #F7F7F7; }
+
 a:hover{color: #5d6d7e;}
 
 .btn-sign,.btn-signup{
@@ -111,6 +107,11 @@ a:hover{color: #5d6d7e;}
     padding: 7px 20px 10px ;
 background-color: #6C5B7B;}
 
+.action-col-md-3{
+    margin: 30px;
+    padding: 20px;
+    
+}
 
 footer{text-align: center;
   position: fixed;
@@ -125,18 +126,60 @@ footer{text-align: center;
 
 
   @media (max-width: 576px) { 
-
-    
+    .navbar-toggler,.navbar-toggler{
+        
+    background-color:black;}
+    .welcome a{
+        text-decoration: none;
+        background-color: #6C5B7B;
+        color: #F7F7F7;
+        font-size: 20px;
+        margin: 50px ;
+        padding: 7px 15px 10px ;
+        
+    }
+    .welcome a:hover{
+        background-color: #A9A9A9 ;
+        text-decoration: none;
+        
+    }
+    .welcome img{display:none ;}
+    .info{ background-color:white;
+        
+        
+   }
    
-   
-  }
+    }
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) { 
-    
+    .welcome a{
+        text-decoration: none;
+        background-color: #6C5B7B;
+        color: #F7F7F7;
+        font-size: 20px;
+        margin: 50px ;
+        padding: 7px 15px 10px ;
+        
+    } 
+    .welcome img{display:none ;}
+    .info{ background-color:white
     
  }
-
+}
 /* Large devices (desktops, 992px and up)  */
-@media (max-width: 992px) { }
+@media (max-width: 992px) { 
+    .info{ background-color:white}
+    .welcome a{
+        text-decoration: none;
+        background-color: #6C5B7B;
+        color: #F7F7F7;
+        font-size: 20px;
+        margin: 50px ;
+        padding: 7px 15px 10px ;
+        
+    }
+    .welcome img{display:none ;}
+   
+}
     

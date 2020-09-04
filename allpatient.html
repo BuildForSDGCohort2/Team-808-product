@@ -8,12 +8,14 @@
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
-    <title> Patient Data | Homepage</title>
+    <title> Patient Data | All Patients</title>
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-md   sticky-top">
-      <div class="container-fluid">
+
+
+    <nav class="navbar navbar-expand-lg navbar-light  sticky-top ">
+      <div class="container">
     <a class="navbar-brand" href="#"><img src="images/logo.png" lt="logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
     >
@@ -23,29 +25,50 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="nav justify-content-end ml-auto">
         <li class="nav-item text-uppercase">
-            <a class="nav-link" href="index.html">home</a>
-          </li>
-       
-        <li class="nav-item text-uppercase">
-          <a class="nav-link" href="about.html">about</a>
+          <a class="nav-link" href="index.html">home</a>
         </li>
-       
+     
+      <li class="nav-item text-uppercase">
+        <a class="nav-link" href="about.html">about</a>
+      </li>
+     
+      <li class="nav-item text-uppercase">
+          <a class="nav-link" href="new.html">New Patient</a>
+        </li>
         <li class="nav-item text-uppercase">
-            <a class="nav-link" href="new.html">New Patient</a>
-          </li>
-         
-            <li class="nav-item text-uppercase">
-                <a class="nav-link" href="login.html">logout</a>
-              </li>
-             
+          <a class="nav-link" href="patient.html">Patient</a>
+        </li>
+          <li class="nav-item text-uppercase">
+              <a class="nav-link" href="login.html">logout</a>
+            </li>
        </ul>
     </div>
   </div>
   </nav>
+
+
+
+
+
+
+   
 <section class="info">
+  
+  
+  <form class="form-inline">
+    <div class="form-group mb-2">
+      <label for="inputEmail4">Search Patient</label>
+    <input type="text" class="form-control" placeholder=" enter name">
+    <button type="submit" class="btn-signup">Search</button>
+    </div>
+    </form>
+  
+    
+  
   <h2 class="text-center text-capitalize">All Patient Data</h2>
-  <div  class="container padding col-md-10">
-  <table class="table table-hover">
+
+  <div  class="container padding col-md-12">
+  <table class="table table-bordered">
     <thead>
       <tr>
         <th scope="col">Patient Names</th>
@@ -54,45 +77,46 @@
         <th scope="col">Gender</th>
         <th scope="col">Test</th>
         <th scope="col">Result</th>
-        <th scope="col">Image Result</th>
-      </tr>
+        <th scope="col">Medical Imaging</th>
+      </tr> 
     </thead>
     <tbody>
       <tr>
-        <th scope="row">kkkll;</th>
-        <td>Mark bbb</td>
+        <th scope="row">peace y.</th>
+        <td>Mark bb</td>
         <td>34</td>
         <td>male</td>
         <td>CT scan</td>
-        <td>brain tumor</td>
-        <td>png</td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsam, iusto doloremque dolorum </td>
+        <td><img class="result" src="images/scan.jpg" alt=""></td>
       </tr>
       <tr>
-        <th scope="row">kkkll;</th>
-        <td>Mark bbb</td>
-        <td>34</td>
+        <th scope="row">judy aim</th>
+        <td>bill kk</td>
+        <td>45</td>
         <td>male</td>
-        <td>CT scan</td>
-        <td>brain tumor</td>
-        <td>png</td>
+        <td>MRI</td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsam, iusto doloremque dolorum 
+          </td>
+        <td><img class="table-image" src="images/mri.jpg" alt=""></td>
       </tr>
       <tr>
-        <th scope="row">kkkll;</th>
+        <th scope="row">hope r</th>
         <td>Mark bbb</td>
-        <td>34</td>
-        <td>male</td>
-        <td>CT scan</td>
-        <td>brain tumor</td>
-        <td>png</td>
+        <td>38</td>
+        <td>female</td>
+        <td>X-ray</td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsam, iusto doloremque dolorum </td>
+        <td><img class="table-image" src="images/x-ray.png" alt=""></td>
       </tr>
       <tr>
-        <th scope="row">kkkll;</th>
-        <td>Mark bbb</td>
-        <td>34</td>
+        <th scope="row">victy ad</th>
+        <td>Edmong h.</td>
+        <td>28</td>
         <td>male</td>
-        <td>CT scan</td>
-        <td>brain tumor</td>
-        <td>png</td>
+        <td>Ultrasound</td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsam, iusto doloremque dolorum </td>
+        <td><img class="table-image" src="images/ultrasound.jpg" alt=""></td>
       </tr>
     </tbody>
   </table>
